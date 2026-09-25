@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+@font-face {
+  font-family: 'Brewla';
+  src: url('/fonts/PtgBrewlaRegular-E4L8l.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Kenolab palette, matches kenolab-front-player (purple-500 / purple-400) */
+:root {
+  --kw-purple: #a855f7;
+  --kw-purple-light: #d8b4fe;
+
+  --vp-font-family-base: 'Inter', system-ui, -apple-system, sans-serif;
+
+  --vp-c-brand-1: #9333ea;
+  --vp-c-brand-2: #a855f7;
+  --vp-c-brand-3: #7e22ce;
+  --vp-c-brand-soft: rgba(168, 85, 247, 0.14);
+
+  --vp-home-hero-name-color: transparent;
+  --vp-home-hero-name-background: linear-gradient(120deg, #d8b4fe 20%, #9333ea);
+}
+
+.dark {
+  --kw-purple: #c084fc;
+  --kw-purple-light: #e9d5ff;
+
+  --vp-c-bg: #0f0d14;
+  --vp-c-bg-alt: #16131d;
+  --vp-c-bg-elv: #1b1724;
+  --vp-c-bg-soft: #1b1724;
+
+  --vp-c-brand-1: #c084fc;
+  --vp-c-brand-2: #a855f7;
+  --vp-c-brand-3: #9333ea;
+  --vp-c-brand-soft: rgba(192, 132, 252, 0.16);
+}
+
+/* Rounded square logo */
+.VPNavBarTitle .logo {
+  border-radius: 8px;
+  height: 32px;
+  width: 32px;
+  object-fit: cover;
+}
+
+/* Two-tone title: Keno (light purple) + Wiki (purple) */
+.kw-title {
+  font-family: 'Brewla', serif;
+  font-size: 26px;
+  letter-spacing: 0.02em;
+  line-height: 1;
+  /* Brewla's glyphs sit high in their line box; nudge down to align with the logo's center */
+  transform: translateY(3px);
+}
+.kw-keno { color: var(--kw-purple-light); }
+.kw-wiki { color: var(--kw-purple); }
+
+/* Light mode: very light purple would be unreadable on white, darken slightly */
+:root:not(.dark) .kw-keno { color: #c084fc; }
+:root:not(.dark) .kw-wiki { color: #7e22ce; }
+
+/* Rounded hero logo on the home page */
+.VPHero .image-src {
+  border-radius: 24px;
+  max-width: 256px;
+  max-height: 256px;
+}
