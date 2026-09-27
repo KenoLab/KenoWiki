@@ -29,6 +29,7 @@ export default defineConfig({
         text: 'How to play',
         items: [
           { text: 'Getting started', link: '/how-to-play/' },
+          { text: 'FLag Strategy', link: '/how-to-play/flag' },
         ],
       },
       {
@@ -41,6 +42,12 @@ export default defineConfig({
         text: 'VPN Usage',
         items: [
           { text: 'Connecting to the lab', link: '/vpn/' },
+        ],
+      },
+            {
+        text: 'Kenomunity',
+        items: [
+          { text: 'Beta testing', link: '/community/betatest' },
         ],
       },
     ],
