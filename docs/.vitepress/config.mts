@@ -10,7 +10,6 @@ export default defineConfig({
 
   themeConfig: {
     logo: { src: '/logo.jpg', alt: 'Kenolab' },
-    // Title is rendered by the theme (two-tone "Keno" + "Wiki")
     siteTitle: false,
 
     nav: [
@@ -20,19 +19,29 @@ export default defineConfig({
     sidebar: [
       {
         text: 'Introduction',
-        items: [{ text: 'What is Kenolab?', link: '/introduction/' }],
+        items: [
+          { text: 'What is Kenolab?', link: '/introduction/' },
+          { text: 'Support', link: '/introduction/support.md' },
+          { text: 'Hints & Writeups Policy', link: '/introduction/wu-pol.md' },
+        ],
       },
       {
         text: 'How to play',
-        items: [{ text: 'Getting started', link: '/how-to-play/' }],
+        items: [
+          { text: 'Getting started', link: '/how-to-play/' },
+        ],
       },
       {
         text: 'Kenobot',
-        items: [{ text: 'Using the bot', link: '/kenobot/' }],
+        items: [
+          { text: 'Using the bot', link: '/kenobot/' },
+        ],
       },
       {
         text: 'VPN Usage',
-        items: [{ text: 'Connecting to the lab', link: '/vpn/' }],
+        items: [
+          { text: 'Connecting to the lab', link: '/vpn/' },
+        ],
       },
     ],
 
