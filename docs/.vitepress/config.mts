@@ -44,12 +44,6 @@ export default defineConfig({
           { text: 'Connecting to the lab', link: '/vpn/' },
         ],
       },
-            {
-        text: 'Kenomunity',
-        items: [
-          { text: 'Beta testing', link: '/community/betatest' },
-        ],
-      },
     ],
 
     search: { provider: 'local' },
