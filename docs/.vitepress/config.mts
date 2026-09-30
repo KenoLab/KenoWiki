@@ -22,14 +22,14 @@ export default defineConfig({
         items: [
           { text: 'What is Kenolab?', link: '/introduction/' },
           { text: 'Support', link: '/introduction/support.md' },
-          { text: 'Hints & Writeups Policy', link: '/introduction/wu-pol.md' },
+          { text: 'Hints & writeups policy', link: '/introduction/wu-pol.md' },
         ],
       },
       {
         text: 'How to play',
         items: [
           { text: 'Getting started', link: '/how-to-play/' },
-          { text: 'FLag Strategy', link: '/how-to-play/flag' },
+          { text: 'FLag strategy', link: '/how-to-play/flag' },
         ],
       },
       {
