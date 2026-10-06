@@ -1,4 +1,4 @@
-# Flag Strategy
+# Flag strategy
 
 Kenolab uses a consistent flag system across its labs. The exact location of a flag depends on whether you are playing a **Standalone** lab or a **Chain**.
 

@@ -35,7 +35,6 @@ export default defineConfig({
       {
         text: 'Introduction',
         items: [
-          { text: 'What is Kenolab?', link: '/introduction/' },
           { text: 'Support', link: '/introduction/support.md' },
           { text: 'Hints & writeups policy', link: '/introduction/wu-pol.md' },
         ],
@@ -44,13 +43,27 @@ export default defineConfig({
         text: 'How to play',
         items: [
           { text: 'Getting started', link: '/how-to-play/' },
-          { text: 'FLag strategy', link: '/how-to-play/flag' },
+          { text: 'Flag strategy', link: '/how-to-play/flag' },
         ],
       },
       {
         text: 'Kenobot',
         items: [
           { text: 'Using the bot', link: '/kenobot/' },
+          { text: '/help', link: '/kenobot/help' },
+          { text: '/access', link: '/kenobot/access' },
+          { text: '/whoami', link: '/kenobot/whoami' },
+          { text: '/flag', link: '/kenobot/flag' },
+          { text: '/vpn', link: '/kenobot/vpn' },
+          { text: '/leave', link: '/kenobot/leave' },
+          {
+            text: 'Event only',
+            collapsed: false,
+            items: [
+              { text: '/team', link: '/kenobot/event-only/team' },
+              { text: '/play', link: '/kenobot/event-only/play' },
+            ],
+          },
         ],
       },
       {

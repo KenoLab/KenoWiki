@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
 @font-face {
-  font-family: 'Brewla';
-  src: url('/fonts/PtgBrewlaRegular-E4L8l.woff') format('woff');
+  font-family: 'Adumu';
+  src: url('/fonts/Adumu.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -19,9 +19,6 @@
   --vp-c-brand-2: #a855f7;
   --vp-c-brand-3: #7e22ce;
   --vp-c-brand-soft: rgba(168, 85, 247, 0.14);
-
-  --vp-home-hero-name-color: transparent;
-  --vp-home-hero-name-background: linear-gradient(120deg, #d8b4fe 20%, #9333ea);
 }
 
 .dark {
@@ -49,11 +46,11 @@
 
 /* Two-tone title: Keno (light purple) + Wiki (purple) */
 .kw-title {
-  font-family: 'Brewla', serif;
+  font-family: 'Adumu', 'Inter', serif;
   font-size: 26px;
   letter-spacing: 0.02em;
   line-height: 1;
-  /* Brewla's glyphs sit high in their line box; nudge down to align with the logo's center */
+  /* Adumu's glyphs sit high in their line box; nudge down to align with the logo's center */
   transform: translateY(3px);
 }
 .kw-keno { color: var(--kw-purple-light); }
@@ -63,9 +60,27 @@
 :root:not(.dark) .kw-keno { color: #c084fc; }
 :root:not(.dark) .kw-wiki { color: #7e22ce; }
 
-/* Rounded hero logo on the home page */
-.VPHero .image-src {
-  border-radius: 24px;
-  max-width: 256px;
-  max-height: 256px;
+/* Rounded screenshots in doc pages */
+.vp-doc img {
+  border-radius: 8px;
+}
+
+/* Zoomed image overlay must sit above the navbar */
+.medium-zoom-overlay,
+.medium-zoom-image--opened {
+  z-index: 999;
+}
+
+/* Blue info boxes (VitePress default is grey) */
+:root {
+  --vp-custom-block-info-border: transparent;
+  --vp-custom-block-info-text: var(--vp-c-text-1);
+  --vp-custom-block-info-bg: rgba(59, 130, 246, 0.12);
+  --vp-custom-block-info-code-bg: rgba(59, 130, 246, 0.16);
+}
+.custom-block.info .custom-block-title {
+  color: #3b82f6;
+}
+.dark .custom-block.info .custom-block-title {
+  color: #60a5fa;
 }

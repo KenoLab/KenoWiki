@@ -1,27 +1,59 @@
 # Getting started
 
-## 1. Create your account
+## On our website
 
-Log in on [www.kenolab.eu](https://www.kenolab.eu) with your **Discord** account. It's the only
-login method.
+### 1. Login
 
-## 2. Join or create a team
+Log in on [www.kenolab.eu](https://www.kenolab.eu/login) with your **Discord** account and accept
+the terms. Discord is the only login method.
 
-From the web app or with `/team` on Discord, create a team or join an existing one using its
-secret code.
+![Kenolab login page with the Connect with Discord button](/images/how-to-play/create-account.png)
 
-## 3. Register for an event
+### 2. Select an event and take your seat
 
-Once in a team, register it for an event. The event's labs become visible when it starts.
+Open the [events page](https://www.kenolab.eu/events), pick an event and take your seat. Some
+events are paid, others need a secret code.
 
-## 4. Get connected
+![Events page listing upcoming events](/images/how-to-play/register-event.png)
 
-Download your VPN profile and connect, see [VPN Usage](/vpn/).
+### 3. Join the Discord of the event
 
-## 5. Deploy a lab and hunt flags
+Join the [Kenolab Discord server](https://discord.gg/cXaKPSzgUE), or the event's own server if it
+has one.
 
-Start your lab instance, attack the machines, and submit every flag you find on the website or
-with `/flag` on Discord.
+![Discord invitation to the Kenolab server](/images/how-to-play/join-discord.png)
+
+## With Kenobot
+
+Everything else happens on Discord with [Kenobot](/kenobot/).
+
+### 4. Verify your account
+
+Run `/access`. Kenobot checks your account and your seat, then gives you access to the event.
+
+![Kenobot reply to the /access command](/images/how-to-play/access.png)
+
+::: tip
+On an event's own Discord server, `/access` can register you directly, without the website.
+:::
+
+### 5. Create or join a team
+
+Run `/team` to create a team or join one.
+
+**Solo event?** Skip this step, your team is created for you.
+
+![The /team command in Discord](/images/how-to-play/team.png)
+
+### 6. Get your VPN
+
+Run `/vpn` and connect with the file Kenobot sends you, see [VPN Usage](/vpn/).
+
+![Kenobot reply to the /vpn command with the configuration file](/images/how-to-play/vpn.png)
+
+### 7. Start hacking
+
+Once the event starts, run `/play` to start a lab, then submit every flag you find with `/flag`.
 
 ::: tip Locked labs
 Some labs depend on others. Submit all flags of the prerequisite labs to unlock them.
