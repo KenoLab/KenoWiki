@@ -59,3 +59,14 @@
 /* Light mode: very light purple would be unreadable on white, darken slightly */
 :root:not(.dark) .kw-keno { color: #c084fc; }
 :root:not(.dark) .kw-wiki { color: #7e22ce; }
+
+/* Rounded screenshots in doc pages */
+.vp-doc img {
+  border-radius: 8px;
+}
+
+/* Zoomed image overlay must sit above the navbar */
+.medium-zoom-overlay,
+.medium-zoom-image--opened {
+  z-index: 999;
+}
