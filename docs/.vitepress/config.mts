@@ -36,7 +36,6 @@ export default defineConfig({
         text: 'Introduction',
         items: [
           { text: 'KenoWiki', link: '/' },
-          { text: 'What is Kenolab?', link: '/introduction/' },
           { text: 'Support', link: '/introduction/support.md' },
           { text: 'Hints & writeups policy', link: '/introduction/wu-pol.md' },
         ],

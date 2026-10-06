@@ -7,12 +7,10 @@ Kenobot is the Kenolab Discord bot. It exposes the platform through slash comman
 | Command | What it does |
 |---|---|
 | `/help` | List every available command. |
-| `/access` | After Oauth2 login, check and claim your access to the platform and event |
+| `/access` | After Oauth2 login, check and claim your access to the event. |
 | `/whoami` | Show your profile, stats and team. |
 | `/team` | View, create, join or leave a team. |
 | `/play` | Manage your event lab instances. |
-| `/chain` | Manage chain lab instances. |
-| `/standalone` | Manage standalone lab instances. |
 | `/flag` | Submit a flag. |
 | `/progression` | See your progression per category. |
 | `/vpn` | Receive your VPN configuration file. |
