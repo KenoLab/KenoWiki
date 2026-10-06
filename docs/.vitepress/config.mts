@@ -50,6 +50,20 @@ export default defineConfig({
         text: 'Kenobot',
         items: [
           { text: 'Using the bot', link: '/kenobot/' },
+          { text: '/help', link: '/kenobot/help' },
+          { text: '/access', link: '/kenobot/access' },
+          { text: '/whoami', link: '/kenobot/whoami' },
+          { text: '/flag', link: '/kenobot/flag' },
+          { text: '/vpn', link: '/kenobot/vpn' },
+          { text: '/leave', link: '/kenobot/leave' },
+          {
+            text: 'Event only',
+            collapsed: false,
+            items: [
+              { text: '/team', link: '/kenobot/event-only/team' },
+              { text: '/play', link: '/kenobot/event-only/play' },
+            ],
+          },
         ],
       },
       {
