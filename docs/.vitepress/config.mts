@@ -35,7 +35,6 @@ export default defineConfig({
       {
         text: 'Introduction',
         items: [
-          { text: 'KenoWiki', link: '/' },
           { text: 'Support', link: '/introduction/support.md' },
           { text: 'Hints & writeups policy', link: '/introduction/wu-pol.md' },
         ],

@@ -70,3 +70,17 @@
 .medium-zoom-image--opened {
   z-index: 999;
 }
+
+/* Blue info boxes (VitePress default is grey) */
+:root {
+  --vp-custom-block-info-border: transparent;
+  --vp-custom-block-info-text: var(--vp-c-text-1);
+  --vp-custom-block-info-bg: rgba(59, 130, 246, 0.12);
+  --vp-custom-block-info-code-bg: rgba(59, 130, 246, 0.16);
+}
+.custom-block.info .custom-block-title {
+  color: #3b82f6;
+}
+.dark .custom-block.info .custom-block-title {
+  color: #60a5fa;
+}
