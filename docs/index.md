@@ -1,4 +1,4 @@
-# Kenolab
+# KenoWiki
 
 Welcome to **KenoWiki**, the official documentation of [Kenolab](https://www.kenolab.eu).
 
