@@ -45,7 +45,7 @@ export default defineConfig({
         text: 'How to play',
         items: [
           { text: 'Getting started', link: '/how-to-play/' },
-          { text: 'FLag strategy', link: '/how-to-play/flag' },
+          { text: 'Flag strategy', link: '/how-to-play/flag' },
         ],
       },
       {
